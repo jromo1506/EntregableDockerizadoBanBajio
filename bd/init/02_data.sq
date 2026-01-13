@@ -1,0 +1,67 @@
+-- MySQL dump 10.13  Distrib 8.0.44, for Linux (x86_64)
+--
+-- Host: localhost    Database: banbajio
+-- ------------------------------------------------------
+-- Server version	8.0.44-0ubuntu0.24.04.2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `producto`
+--
+
+LOCK TABLES `producto` WRITE;
+/*!40000 ALTER TABLE `producto` DISABLE KEYS */;
+INSERT INTO `producto` VALUES (4,'12312123','Monitor',131232.00,NULL,1),(6,'11','11',1.00,NULL,1),(7,'2312','12312',130.00,NULL,1),(8,'132213e','12312',13212.00,NULL,1),(9,'312','123321',132132.00,NULL,1),(16,'1243','Macbook Pro 14 M4',24000.00,4,1),(17,'3241','Iphone 12',20000.00,4,1),(18,'2738','Reloj Timex TM-400',2000.00,7,1),(19,'9874','Mocasines Lacoste',2000.00,9,1),(20,'5528','Botas Timberland',1500.00,9,1),(21,'2232','Cinturon Gucci',1200.00,8,1);
+/*!40000 ALTER TABLE `producto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `producto_proveedor`
+--
+
+LOCK TABLES `producto_proveedor` WRITE;
+/*!40000 ALTER TABLE `producto_proveedor` DISABLE KEYS */;
+INSERT INTO `producto_proveedor` VALUES (7,16,9,'1234',20000.00),(8,16,10,'3434',21000.00),(9,18,12,'8827',1000.00),(10,19,12,'8833',1100.00);
+/*!40000 ALTER TABLE `producto_proveedor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `proveedor`
+--
+
+LOCK TABLES `proveedor` WRITE;
+/*!40000 ALTER TABLE `proveedor` DISABLE KEYS */;
+INSERT INTO `proveedor` VALUES (9,'Liverpool','Tienda departamental'),(10,'Sears','Tienda departamental'),(11,'Sanborns','Tienda departamental'),(12,'Palacio de hierro','Tienda departamental');
+/*!40000 ALTER TABLE `proveedor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tipo_producto`
+--
+
+LOCK TABLES `tipo_producto` WRITE;
+/*!40000 ALTER TABLE `tipo_producto` DISABLE KEYS */;
+INSERT INTO `tipo_producto` VALUES (4,'Telefonia y ordenadores ','Telefonos, Laptops, Gabinetes, Mouse, Teclados.'),(7,'Joyeria','Aretes, Collares, Anillos, Relojes'),(8,'Ropa','Vestidos Sacos Camisas, etc'),(9,'Zapateria','Tenis, Botas, Zapatos');
+/*!40000 ALTER TABLE `tipo_producto` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-01-13  1:01:20
